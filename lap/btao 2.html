@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      :root {
+        /* Color Variables */
+        --color-white: hsl(252, 30%, 100%);
+        --color-light: hsl(252, 30%, 92%);
+        --color-gray: hsl(252, 15%, 65%);
+        --color-primary: rgb(23, 15, 35);
+        --color-dark: hsl(216, 13.2%, 14.9%);
+        --color-secondary: rgb(155, 77, 224);
+      }
+      .bg-primary {
+        background-color: var(--color-primary);
+      }
+      section {
+        max-width: 80%;
+        background-color: var(--color-primary);
+        margin: auto;
+        margin-top: 1.5rem;
+        padding: 1rem;
+      }
+      body,
+      button,
+      input,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      p,
+      span {
+        font-family: "Inter", sans-serif;
+        color: var(--color-white);
+      }
+      .section-title {
+        font-size: 1.25rem;
+        margin-bottom: 1.5rem;
+      }
+      .row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      .item-box {
+        width: 18%;
+        aspect-ratio: 3/4;
+        background-color: transparent;
+        border-radius: 6px;
+      }
+      .img-box {
+        width: 100%;
+        aspect-ratio: 1/1;
+        border-radius: 6px;
+        overflow: hidden;
+        margin-bottom: 1rem;
+      }
+      .img-box:hover .item-img {
+        transition: 0.6s;
+        cursor: pointer;
+        transform: scale(1.05);
+      }
+      .img-box:hover .mask-img {
+        display: flex;
+        cursor: pointer;
+      }
+      .item-img {
+        width: 100%;
+      }
+
+      .item-box-title {
+        margin: 0.5rem 0;
+        font-size: 0.875rem;
+      }
+      .item-box-title:hover {
+        color: var(--color-secondary);
+        cursor: pointer;
+      }
+      .author-name {
+        color: rgba(244, 244, 244, 0.45);
+        font-size: 0.725rem;
+      }
+      .author-name:hover {
+        color: var(--color-secondary);
+        cursor: pointer;
+        text-decoration: underline;
+      }
+      .mask-img {
+        position: relative;
+        width: 100%;
+        aspect-ratio: 1/1.02;
+        background-color: rgba(22, 22, 22, 0.65);
+        opacity: 0.95;
+        transform: translateY(-100%);
+        justify-content: space-evenly;
+        display: none;
+      }
+      .icon {
+        margin-top: 48%;
+    }
+    .lg {
+        font-size: 1.8rem;
+        border-radius: 50%;
+        background-color: transparent;
+        border: 2px solid rgba(255, 255, 255, 0.2);
+        width: 48px;
+        height: 48px;
+        text-align: center;
+        justify-content: center;
+        padding-top: 7px;
+    }
+    .lg:hover {
+        opacity: 0.85;
+    }
+    .sm {
+        margin-top: 50%;
+        border-radius: 50%;
+        font-size: 1.2rem;
+        width: 32px;
+        height: 32px;
+        text-align: center;
+        justify-content: center;
+        padding-top: 7px;
+        background-color: transparent;
+      }
+      .sm:hover {
+        background-color: rgba(255, 255, 255, 0.4);
+      }
+    </style>
+    <script
+      src="https://kit.fontawesome.com/2ff95f2a89.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <section style="height: 42vh">
+      <h3 class="section-title">Album Hot</h3>
+      <div class="carrousel row">
+        <div class="item-box">
+          <div class="img-box">
+            <img
+              src="https://photo-resize-zmp3.zmdcdn.me/w320_r1x1_jpeg/cover/0/a/6/1/0a61f6f51223a7931fb0e509d3555710.jpg"
+              alt="thumbnail_1"
+              class="item-img"
+            />
+            <div class="mask-img row">
+              <i class="icon sm fa-regular fa-heart"></i>
+              <i class="icon lg fa-solid fa-play"></i>
+              <i class="icon sm fa-solid fa-ellipsis"></i>
+            </div>
+          </div>
+          <h4 class="item-box-title">Em khóc được rồi (Single)</h4>
+          <h5 class="author-name">Phượng Vũ</h5>
+        </div>
+        <div class="item-box">
+          <div class="img-box">
+            <img
+              src="https://photo-resize-zmp3.zmdcdn.me/w320_r1x1_jpeg/cover/a/5/9/9/a5996aa4a7b4f152be0f4ff4f2e8fc33.jpg"
+              alt="thumbnail_2"
+              class="item-img"
+            />
+            <div class="mask-img row">
+              <i class="icon sm fa-regular fa-heart"></i>
+              <i class="icon lg fa-solid fa-play"></i>
+              <i class="icon sm fa-solid fa-ellipsis"></i>
+            </div>
+          </div>
+          <h4 class="item-box-title">Em với anh là gì (Single)</h4>
+          <h5 class="author-name">Hoàng Anh Duy</h5>
+        </div>
+        <div class="item-box">
+          <div class="img-box">
+            <img
+              src="https://photo-resize-zmp3.zmdcdn.me/w320_r1x1_jpeg/cover/a/0/c/4/a0c4c1e18c960fc4c1bf6d6228821e3a.jpg"
+              alt="thumbnail_3"
+              class="item-img"
+            />
+            <div class="mask-img row">
+              <i class="icon sm fa-regular fa-heart"></i>
+              <i class="icon lg fa-solid fa-play"></i>
+              <i class="icon sm fa-solid fa-ellipsis"></i>
+            </div>
+          </div>
+          <h4 class="item-box-title">Chỉ là quá yêu em (Single)</h4>
+          <h5 class="author-name">Quang Đăng Trần</h5>
+        </div>
+        <div class="item-box">
+          <div class="img-box">
+            <img
+              src="https://photo-resize-zmp3.zmdcdn.me/w320_r1x1_jpeg/cover/a/a/9/5/aa954b5fd7ba673667b4b465de36f71c.jpg"
+              alt="thumbnail_4"
+              class="item-img"
+            />
+            <div class="mask-img row">
+              <i class="icon sm fa-regular fa-heart"></i>
+              <i class="icon lg fa-solid fa-play"></i>
+              <i class="icon sm fa-solid fa-ellipsis"></i>
+            </div>
+          </div>
+          <h4 class="item-box-title">Nói ra thì tốt hơn (Single)</h4>
+          <h5 class="author-name">Viet Lee</h5>
+        </div>
+        <div class="item-box">
+          <div class="img-box">
+            <img
+              src="https://photo-resize-zmp3.zmdcdn.me/w320_r1x1_jpeg/cover/a/7/b/9/a7b987db4245b2d7c014296c99a7731d.jpg"
+              alt="thumbnail_5"
+              class="item-img"
+            />
+            <div class="mask-img row">
+              <i class="icon sm fa-regular fa-heart"></i>
+              <i class="icon lg fa-solid fa-play"></i>
+              <i class="icon sm fa-solid fa-ellipsis"></i>
+            </div>
+          </div>
+          <h4 class="item-box-title">Em đã nói trước (Single)</h4>
+          <h5 class="author-name">Hana Cẩm Tiên</h5>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

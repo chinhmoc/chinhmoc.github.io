@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agency - Kalium WordPress Theme</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family:"Function Pro",sans-serif;
+    font-style: normal;
+    font-weight: normal;
+}
+.logo{
+    margin-left: 180px;
+    margin-top: 35px;
+    width: 120px;
+    height: 36px;
+}
+.hop1{
+    background-image: url(https://demo.kaliumtheme.com/fashion/wp-content/uploads/2016/11/background.jpg);
+    display: flex;
+    justify-content: start;
+    position: relative;
+}
+.caption{
+    position: absolute;
+    color: white;
+    list-style: none;
+    display: flex;
+    gap: 35px;
+    font-size: 18px;
+    cursor: pointer;
+    padding-top: 45px;
+    height: 25px;
+    margin: auto;
+}
+.caption1{
+    border-bottom: 2px solid;
+}
+.caption-table1{
+    background-color: white;
+    color: black;
+    display: none;
+    margin-top: 10px;
+    height: 90px;
+    width: 200px;
+    position: absolute;
+    border: 1px solid black;
+}
+.captionsmall11{
+    list-style-type: none;
+    margin-left: 10px;
+    line-height: 40px;
+    transition: 0.5s;
+    position: relative;
+}
+.captionsmall11::after{
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    height: 1.25px;
+    width: 100%;
+    left: 0;
+    background-color: black;
+    transition: 0.3s;
+    transition-timing-function: ease-in-out;
+    transform: scaleX(0);
+}
+ .captionsmall1:hover::after{
+    transform: scaleX(1);
+}
+.caption1:hover .caption-table1{
+    display: block;
+}
+.caption-table2{
+    background-color: white;
+    color: black;
+    display: none;
+    margin-top: 10px;
+    height: 300px;
+    width: 200px;
+    position: absolute;
+    border: 1px solid black;
+}
+.caption2{
+    transition: 0.5s;
+    position: relative;
+}
+.caption2::after{
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    height: 1.5px;
+    width: 100%;
+    left: 0;
+    background-color: white;
+    transition: 0.3s;
+    transition-timing-function: ease-in-out;
+    transform: scaleX(0);
+}
+ .caption2:hover::after{
+    transform: scaleX(1);
+}
+.captionsmall2{
+    list-style-type: none;
+    margin-left: 10px;
+    line-height: 40px;
+}
+.captionsmall22{
+    font-size: 15px;
+    transition: 0.5s;
+    position: relative;
+}
+.captionsmall22::after{
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    height: 1.25px;
+    width: 100%;
+    left: 0;
+    text-decoration: solid;
+    background-color: black;
+    transition: 0.3s;
+    transition-timing-function: ease-in-out;
+    transform: scaleX(0);
+}
+ .captionsmall22:hover::after{
+    transform: scaleX(1);
+}
+.caption2:hover .caption-table2{
+    display: block;
+}
+.caption-table3{
+    background-color: white;
+    color: black;
+    display: none;
+    margin-top: 10px;
+    height: 300px;
+    width: 200px;
+    position: absolute;
+    border: 1px solid black;
+}
+.caption3{
+    transition: 0.5s;
+    position: relative;
+}
+.caption3::after{
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    height: 1.25px;
+    width: 100%;
+    left: 0;
+    background-color: white;
+    transition: 0.3s;
+    transition-timing-function: ease-in-out;
+    transform: scaleX(0);
+}
+ .caption3:hover::after{
+    transform: scaleX(1);
+}
+.captionsmall3{
+    list-style-type: none;
+    margin-left: 10px;
+    line-height: 40px;
+}
+.caption3:hover .caption-table3{
+    display: block;
+}
+.caption4{
+    transition: 0.5s;
+    position: relative;
+}
+.caption4::after{
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    height: 1.25px;
+    width: 100%;
+    left: 0;
+    background-color: white;
+    transition: 0.3s;
+    transition-timing-function: ease-in-out;
+    transform: scaleX(0);
+}
+ .caption4:hover::after{
+    transform: scaleX(1);
+}
+.caption-table4{
+    background-color: white;
+    color: black;
+    display: none;
+    margin-top: 10px;
+    height: 90px;
+    width: 200px;
+    position: absolute;
+    border: 1px solid black;
+}
+.captionsmall4{
+    list-style-type: none;
+    margin-left: 10px;
+    line-height: 40px;
+}
+.caption4:hover .caption-table4{
+    display: block;
+}
+.caption-table5{
+    background-color: white;
+    color: black;
+    display: none;
+    margin-top: 10px;
+    height: 210px;
+    width: 200px;
+    position: absolute;
+    border: 1px solid black;
+}
+.caption5{
+    transition: 0.5s;
+    position: relative;
+}
+.caption5::after{
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    height: 1.25px;
+    width: 100%;
+    left: 0;
+    background-color: white;
+    transition: 0.3s;
+    transition-timing-function: ease-in-out;
+    transform: scaleX(0);
+}
+ .caption5:hover::after{
+    transform: scaleX(1);
+}
+.captionsmall5{
+    list-style-type: none;
+    margin-left: 10px;
+    line-height: 40px;
+}
+.caption5:hover .caption-table5{
+    display: block;
+}
+.caption6{
+    transition: 0.5s;
+    position: relative;
+}
+.caption6::after{
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    height: 1.25px;
+    width: 100%;
+    left: 0;
+    background-color: white;
+    transition: 0.3s;
+    transition-timing-function: ease-in-out;
+    transform: scaleX(0);
+}
+ .caption6:hover::after{
+    transform: scaleX(1);
+}
+.fixsearch {
+    display: flex;
+    z-index: 10;
+    background-color: transparent;
+    box-shadow: none;
+    border: none;
+}
+.search {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    color: white;
+    margin-left: -15px;
+    background-color: transparent;
+    padding-block: 1px;
+    padding-inline: 6px;
+    /* border-width: 2px;
+    border-style: outset;
+    border-color: buttonborder;
+    border-image: initial; */
+}
+.search1 {
+    width: 0px;
+    /* margin-left: -15px; */
+    height: 0px;
+    margin-left: 108px;
+    left: 400px;
+    top: -4px;
+    overflow: hidden;
+    transition: width 0.3s ease-in-out;
+    padding: 0;
+    padding-inline:0;
+    padding-block: 0;
+    border: none;
+    position: absolute;
+}
+
+.search1:focus,
+.fixsearch:focus > .search1 {
+    width: 120px;
+    height: 20px;
+    border: 1px solid black;
+    padding: 2px 4px;
+}
+.caption-table7{
+    background-color: white;
+    color: black;
+    margin-top: 10px;
+    height: 100px;
+    text-transform: none;
+    width: 300px;
+    display: none;
+    position: absolute;
+    right: 3px;
+    border: 1px solid black;
+    text-align: center;
+    transition: height 0.3s ease-in-out;
+}
+.caption7{
+    margin-top: 20px;
+    font-size: 9px;
+    color: gray;
+}
+.dongke{
+    margin-top: 30px;
+}
+.caption7small{
+    font-size: 12px;
+    color: gray;
+}
+.iconbag:hover .caption-table7{
+    display: block;
+}
+.caption8small{
+    font-family: "Times New Roman", Times, serif;
+    color: white;
+    margin-top: 300px;
+    margin-left: -880px;
+    width: 500px;
+    height: auto;
+    text-align: center;
+    align-items: center;
+    font-size: 70px;
+}
+.caption8small1{
+    position: relative;
+    background-color: white;
+    color: black;
+    margin-left: -690px;
+    margin-top: 50px;
+    width: 150px;
+    border: none;
+    height: 38px;
+    cursor: pointer;
+}
+.caption8small1:hover{
+    background-color: gray;
+}
+.caption8small2{
+    background-color: rgba(56, 52, 52, 0.715);
+    color: white;
+    width: 140px;
+    border: none;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 25px;
+    font-size: 15px;
+    position: fixed;
+     bottom: 50px;
+    right: 1325px;
+    box-sizing: border-box;
+}
+.caption8small2:hover{
+    background-color: green;
+}
+.hop2{
+    width: 100%;
+    height: 600px;
+}
+.captionhop2small{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 26px;
+}
+.img1{
+    width: 232px;
+    height: 272.4px;
+}
+.img2{
+    width: 232px;
+    height: 272.4px;
+    right: 1064px;
+    top: 1465px;
+    position: absolute;
+    display: none;
+}
+.imghop2small1:hover .img2{
+    margin-top: -345px;
+    display: block;
+    display: flex ;
+    align-items: center ;
+    justify-content: center ;
+    cursor: pointer;
+}
+.imghop2{
+    margin-top: 80px;
+    display: flex;
+    gap: 89px;
+    margin-left: 180px;
+}
+.img3{
+    width: 232px;
+    height: 272.4px;
+}
+.img4{
+    width: 232px;
+    height: 272.4px;
+    right: 743px;
+    top: 1465px;
+    position: absolute;
+    display: none;
+}
+.imghop2small1:hover .img4{
+    margin-top: -345px;
+    display: block;
+    display: flex ;
+    align-items: center ;
+    justify-content: center ;
+    cursor: pointer;
+}
+.img5{
+    width: 232px;
+    height: 272.4px;
+}
+.img6{
+    width: 232px;
+    height: 272.4px;
+    right: 421px;
+    top: 1465px;
+    position: absolute;
+    display: none;
+}
+
+.imghop2small1:hover .img6{
+    margin-top: -345px;
+    display: block;
+    display: flex ;
+    align-items: center ;
+    justify-content: center ;
+    cursor: pointer;
+}
+.img7{
+    width: 232px;
+    height: 272.4px;
+}
+.img8{
+    width: 232px;
+    height: 272.4px;
+    right: 100px;
+    top: 1465px;
+    position: absolute;
+    display: none;
+}
+.imghop2small1:hover .img8{
+    margin-top: -345px;
+    display: block;
+    display: flex ;
+    align-items: center ;
+    justify-content: center ;
+    cursor: pointer;
+}
+.captionimg{
+    font-size: 17px;
+    line-height: 35px;
+}
+.c1{
+    font-size: 15px;
+    color: gray;
+}
+.c2{
+    font-size: 20px;
+    margin-left: 200px;
+    margin-top: -70px;
+}
+
+    </style>
+    <script src="https://kit.fontawesome.com/7dc508f75f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" id="typolab-function-pro-font-18-css"
+        href="https://demo.kaliumtheme.com/fashion/wp-content/uploads/typolab-fonts/function-pro-6e2.css?ver=3.11.2"
+        media="all">
+</head>
+
+<body>
+
+    <div class="hop1">
+        <img style="
+                    margin: auto;
+                    width: 668px;
+                    height: 940px;
+                    "
+            src="https://demo.kaliumtheme.com/fashion/wp-content/uploads/2016/12/home_slider_2.png" alt="anh">
+            <ul class="caption">
+                <div class="row">
+                    <a class="logo" href="https://demo.kaliumtheme.com/fashion/">
+                        <img style="width: 120px;" src="https://demo.kaliumtheme.com/fashion/wp-content/uploads/2016/10/fashion_logo.png" alt="icon">
+                    </a>
+
+                </div>
+            <li class="caption1"> Home
+                <i class="fa fa-angle-down" aria-hidden="true"></i>
+                <div class="caption-table1">
+                <ul class="captionsmall1">
+                    <li class="captionsmall11" ><span class="captionsmall22" >Home Fullscreen</span></li>
+                    <li class="captionsmall11"><span class="captionsmall22" >Home Parallak</span></li>
+                </ul>
+            </div>
+            </li>
+            <li class="caption2"> Shop
+                <i class="fa fa-angle-down" aria-hidden="true"></i>
+                <div class="caption-table2">
+                <ul class="captionsmall2">
+                    <li><span class="captionsmall22" >Women</span></li>
+                    <li><span class="captionsmall22" >Men</span></li>
+                    <li><span class="captionsmall22" >Shoes</span></li>
+                    <li><span class="captionsmall22" >Accessories</span></li>
+                    <li><span class="captionsmall22" >Variants</span></li>
+                    <li><span class="captionsmall22" >Pagination</span></li>
+                    <li><span class="captionsmall22" >Cart Icon</span></li>
+                </ul>
+            </div></li>
+            <li class="caption3"> Product
+                <i class="fa fa-angle-down" aria-hidden="true"></i>
+                <div class="caption-table3">
+                    <ul class="captionsmall3">
+                        <li><span class="captionsmall22" >Simple Product</span></li>
+                        <li><span class="captionsmall22" >Variable Product</span></li>
+                        <li><span class="captionsmall22" >External Product</span></li>
+                        <li><span class="captionsmall22" >Grouped Product</span></li>
+                        <li><span class="captionsmall22" >Catalog Mode (No Prices)</span></li>
+                        <li><span class="captionsmall22" >Image Layout</span></li>
+                        <li><span class="captionsmall22" >Image Sizes</span></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="caption4"> News
+                <i class="fa fa-angle-down" aria-hidden="true"></i>
+                <div class="caption-table4">
+                <ul class="captionsmall4">
+                    <li><span class="captionsmall22" >Sidebar Right</span></li>
+                        <li><span class="captionsmall22" >Sidebar Left</span></li>
+                </ul>
+            </div></li>
+            <li class="caption5"> Pages
+                <i class="fa fa-angle-down" aria-hidden="true"></i>
+                <div class="caption-table5">
+                <ul class="captionsmall5">
+                    <li><span class="captionsmall22" >About</span></li>
+                    <li><span class="captionsmall22" >Contact</span></li>
+                    <li><span class="captionsmall22" >Cart</span></li>
+                    <li><span class="captionsmall22" >Checkout</span></li>
+                    <li><span class="captionsmall22" >Login/Register</span></li>
+                </ul>
+            </div></li>
+            <li class="caption6">Buy Now<i class="fa fa-angle-down" aria-hidden="true"></i></li>
+            <button class="fixsearch">
+                <input class="search1" type="text" placeholder="Search.." value="">
+                <div class="search">
+                    <i class="fas fa-search"></i>
+                </div>
+            </button>
+            <i class="iconbag fa fa-shopping-bag" aria-hidden="true">
+                <div class="caption-table7">
+                <p class="caption7">Your cart empty! <span style="color: black;"> Go shopping </span> </p>
+                 <hr class="dongke">
+                 <p class="caption7small">Subtotal: <span style="color: black;">$0</span></p>
+                </div>
+            </i>
+        </ul>
+        <div class="caption8">
+            <p class="caption8small">Monochrome Collection</p>
+            <button class="caption8small1">SHOP NOW</button>
+        </div>
+    </div>
+    </div>
+    <div class="hop2">
+        <div class="captionhop2small">
+        <p>New Arrivals </p>
+        <p style="font-size: 18px;
+                    color: gray;">Latest From our Store</p>
+        </div>
+        <div class="imghop2">
+            <div class="imghop2small1">
+                <img class="img1" src="https://demo.kaliumtheme.com/fashion/wp-content/uploads/2016/11/broken_6-550x681.jpg" alt="anhaoden">
+                <img class="img2" src="https://demo.kaliumtheme.com/fashion/wp-content/uploads/2016/11/broken_2-550x681.jpg" alt="mauden">
+                <div class="captionimg">
+                    <p>Broken T Shirt</p>
+                    <p class="c1">Men, T Shirts</p>
+                    <p class="c2">$9</p>
+                </div>
+            </div>
+            <div class="imghop2small1">
+                <img class="img3" src="https://demo.kaliumtheme.com/fashion/wp-content/uploads/2016/11/knickerboxer_7.jpg" alt="anhaoden">
+                <img class="img4" src="https://demo.kaliumtheme.com/fashion/wp-content/uploads/2016/11/knickerboxer_1.jpg" alt="mauden">
+                <div class="captionimg">
+                    <p>Knickerboxer</p>
+                    <p class="c1">Men, Sweaters</p>
+                    <p class="c2">$25</p>
+                </div>
+            </div>
+            <div class="imghop2small1">
+                <img class="img5" src="https://demo.kaliumtheme.com/fashion/wp-content/uploads/2016/11/studio_belt_3-550x681.jpg" alt="anhaoden">
+                <img class="img6" src="https://demo.kaliumtheme.com/fashion/wp-content/uploads/2016/11/studio_belt_4-550x681.jpg" alt="mauden">
+                <div class="captionimg">
+                    <p>Studio Belt</p>
+                    <p class="c1">Accessories</p>
+                    <p class="c2">$7</p>
+                </div>
+            </div>
+            <div class="imghop2small1">
+                <img class="img7" src="https://demo.kaliumtheme.com/fashion/wp-content/uploads/2016/11/chambray_shirt_8-550x681.jpg" alt="anhaoden">
+                <img class="img8" src="https://demo.kaliumtheme.com/fashion/wp-content/uploads/2016/11/chambray_shirt_1-550x681.jpg" alt="mauden">
+                <div class="captionimg">
+                    <p>Chambray Shirt</p>
+                    <p class="c1">Men, Sweaters</p>
+                    <p class="c2">$29</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

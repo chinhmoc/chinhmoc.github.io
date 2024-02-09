@@ -1,0 +1,53 @@
+.container{
+    width:900px;
+    margin:0 auto;
+    font-family: segoe ui;
+    font-size: 13px;
+}
+.menu{
+    height: 100px;
+    background-color: rgb(13, 121, 13);
+    line-height: 100px;
+    color: white;
+    position: fixed;
+    width:900px;
+
+}
+.trai{
+    float: left;
+    font-size: 3em;
+    margin-left: 125px;
+    transition: 0.4s;
+    height:100px;
+}
+.phai{
+    float:right;
+    transition: 0.4s;
+    height: 100px;
+}
+.phai a{
+    text-decoration: none;
+    padding-right: 40px;
+    font-size: 1.5em;
+    color: wheat;
+}
+.content {
+    /* display: flex; */
+    width:100%;
+    justify-content: space-between;
+}
+.nholaitrai{
+    font-size: 2em;
+    margin-left: 100px;
+    color: black;
+    height: 80px;
+}
+.nholaiphai{
+    font-size:1.2em;
+    padding-right: 30px;
+    height: 80px;
+}
+.cot{
+    width: 20%;
+    text-align: justify;
+}

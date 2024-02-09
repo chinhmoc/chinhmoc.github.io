@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bai 1 buoi 4</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap");
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      :root {
+        /* Color Variables */
+        --color-white: hsl(252, 30%, 100%);
+        --color-light: hsl(252, 30%, 92%);
+        --color-gray: hsl(252, 15%, 65%);
+        --color-primary: #0dc0c0;
+        --color-dark: hsl(216, 13.2%, 14.9%);
+      }
+      body,
+      button,
+      input,
+      textarea {
+        font-family: "Open Sans", sans-serif;
+        font-size: 0.875rem;
+        color: var(--color-white);
+      }
+      @media only screen and (max-width: 960px) {
+      }
+      .bg-light {
+        background-color: var(--color-white);
+      }
+      .bg-dark {
+        background-color: var(--color-dark);
+      }
+      header .header {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        padding: 0 22%;
+      }
+      .header.start {
+        height: 46px;
+      }
+      .header.end {
+        height: 96px;
+      }
+      .row {
+        display: flex;
+        flex-direction: row;
+      }
+      a {
+        text-decoration: none;
+        color: var(--color-primary);
+      }
+      .container {
+        padding: 9px 10px;
+      }
+      .container:first-child {
+        padding-left: 0px;
+      }
+      .contact-icon {
+        width: 26px;
+        height: 26px;
+        background-color: var(--color-primary);
+        text-align: center;
+        font-size: 12px;
+        padding-top: 8px;
+        font-weight: 300;
+        margin-right: 4px;
+      }
+      .sub-text {
+        opacity: 0.4;
+        font-weight: 300;
+      }
+      li {
+        list-style-type: none;
+      }
+      .socials-text-box {
+        margin: 12px 18px;
+      }
+      .socials-icons {
+        width: fit-content;
+      }
+      .socials-item {
+        width: 46px;
+        height: 46px;
+        background-color: transparent;
+        border-left: 0.5px solid rgba(255, 255, 255, 0.1);
+        text-align: center;
+        padding-top: 12px;
+      }
+      .socials-item:last-child {
+        border-right: 0.5px solid rgba(255, 255, 255, 0.1);
+      }
+
+      .social-icon {
+        opacity: 0.75;
+      }
+      .logo-img {
+        width: 96px;
+        height: 96px;
+        margin-right: 10px;
+      }
+      .logo-text {
+        color: var(--color-dark);
+        opacity: 0.85;
+        text-align: center;
+        margin: 38px 10px;
+      }
+      .link a {
+        display: inline-block;
+        padding: 36px 25px 36px 15px;
+        text-align: center;
+        justify-content: center;
+        font-weight: 600;
+        color: var(--color-gray);
+      }
+      .link a:hover span {
+        border-bottom: 2px solid var(--color-primary);
+        padding-bottom: 36px;
+      }
+      .link a:hover span::after {
+        color: var(--color-primary);
+      }
+      .link:hover .drop-down-menu {
+        display: block;
+      }
+      .active a span {
+        color: var(--color-primary);
+        border-bottom: 2px solid var(--color-primary);
+        padding-bottom: 36px;
+      }
+      .link a span::after {
+        content: "\2BC6";
+        font-size: 0.6rem;
+        margin-left: 6px;
+        opacity: 0.35;
+      }
+      .drop-down-menu {
+        display: none;
+      }
+      .drop-down-menu .dropdown-link {
+        padding: 13px 18px;
+        background-color: var(--color-dark);
+        color: var(--color-light);
+        opacity: 0.95;
+        display: block;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+      }
+      .drop-down-menu li:first-child .dropdown-link {
+        border-top: 2px solid var(--color-primary);
+      }
+      .drop-down-menu .dropdown-link:hover {
+        opacity: 0.9;
+        color: var(--color-primary);
+      }
+
+    </style>
+    <script
+      src="https://kit.fontawesome.com/2ff95f2a89.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div class="header start bg-dark">
+        <div class="component contact row">
+          <div class="contact container">
+            <i class="fa-solid fa-phone-flip contact-icon"></i>
+            <span class="sub-text">Call Us:</span>
+            <span style="opacity: 0.72"><b>+7.906.229.2627</b></span>
+          </div>
+          <div class="contact container">
+            <i class="fa-solid fa-envelope contact-icon"></i>
+            <span class="sub-text">Email:</span>
+            <a href="#" style="font-weight: 400">hello@pitheme.com</a>
+          </div>
+        </div>
+        <div class="component socials row">
+          <div class="socials-text-box">
+            <span class="sub-text">Follow Us:</span>
+          </div>
+          <ul class="socials-icons row">
+            <li class="socials-item">
+              <i class="fa-brands fa-twitter social-icon"></i>
+            </li>
+            <li class="socials-item">
+              <i class="fa-brands fa-facebook social-icon"></i>
+            </li>
+            <li class="socials-item">
+              <i class="fa-brands fa-dribbble social-icon"></i>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="header end bg-light">
+        <div class="logo-container row">
+          <img
+            class="logo-img"
+            src="https://aurum.nikadevs.com/img/logo-base.png"
+            alt="logo"
+          />
+          <div class="logo-text">HTML5 Template</div>
+        </div>
+        <div class="menu-container">
+          <ul class="nav-menu row">
+            <li class="link active">
+              <a href="#"><span>Home</span></a>
+              <ul class="drop-down-menu">
+                <li><a class="dropdown-link" href="#">Home1</a></li>
+                <li><a class="dropdown-link" href="#">Home2</a></li>
+                <li><a class="dropdown-link" href="#">Home3</a></li>
+                <li><a class="dropdown-link" href="#">Home4</a></li>
+                <li><a class="dropdown-link" href="#">Home5</a></li>
+                <li><a class="dropdown-link" href="#">Home6</a></li>
+                <li><a class="dropdown-link" href="#">Home7</a></li>
+                <li><a class="dropdown-link" href="#">Home8</a></li>
+                <li><a class="dropdown-link" href="#">Home9</a></li>
+                <li><a class="dropdown-link" href="#">Home10</a></li>
+                <li><a class="dropdown-link" href="#">Onepage1</a></li>
+                <li><a class="dropdown-link" href="#">Onepage2</a></li>
+              </ul>
+            </li>
+            <li class="link">
+                <a href="#"><span>Features</span></a>
+                <ul class="drop-down-menu">
+                  <li><a class="dropdown-link" href="#">Home1</a></li>
+                  <li><a class="dropdown-link" href="#">Home2</a></li>
+                  <li><a class="dropdown-link" href="#">Home3</a></li>
+                  <li><a class="dropdown-link" href="#">Home4</a></li>
+                  <li><a class="dropdown-link" href="#">Home5</a></li>
+                  <li><a class="dropdown-link" href="#">Home6</a></li>
+                  <li><a class="dropdown-link" href="#">Home7</a></li>
+                  <li><a class="dropdown-link" href="#">Home8</a></li>
+                  <li><a class="dropdown-link" href="#">Home9</a></li>
+                  <li><a class="dropdown-link" href="#">Home10</a></li>
+                  <li><a class="dropdown-link" href="#">Onepage1</a></li>
+                  <li><a class="dropdown-link" href="#">Onepage2</a></li>
+                </ul>
+            </li>
+            <li class="link">
+                <a href="#"><span>Templates</span></a>
+                <ul class="drop-down-menu">
+                  <li><a class="dropdown-link" href="#">Home1</a></li>
+                  <li><a class="dropdown-link" href="#">Home2</a></li>
+                  <li><a class="dropdown-link" href="#">Home3</a></li>
+                  <li><a class="dropdown-link" href="#">Home4</a></li>
+                  <li><a class="dropdown-link" href="#">Home5</a></li>
+                  <li><a class="dropdown-link" href="#">Home6</a></li>
+                  <li><a class="dropdown-link" href="#">Home7</a></li>
+                  <li><a class="dropdown-link" href="#">Home8</a></li>
+                  <li><a class="dropdown-link" href="#">Home9</a></li>
+                  <li><a class="dropdown-link" href="#">Home10</a></li>
+                  <li><a class="dropdown-link" href="#">Onepage1</a></li>
+                  <li><a class="dropdown-link" href="#">Onepage2</a></li>
+                </ul>
+            </li>
+            <li class="link">
+                <a href="#"><span>Elements</span></a>
+                <ul class="drop-down-menu">
+                  <li><a class="dropdown-link" href="#">Home1</a></li>
+                  <li><a class="dropdown-link" href="#">Home2</a></li>
+                  <li><a class="dropdown-link" href="#">Home3</a></li>
+                  <li><a class="dropdown-link" href="#">Home4</a></li>
+                  <li><a class="dropdown-link" href="#">Home5</a></li>
+                  <li><a class="dropdown-link" href="#">Home6</a></li>
+                  <li><a class="dropdown-link" href="#">Home7</a></li>
+                  <li><a class="dropdown-link" href="#">Home8</a></li>
+                  <li><a class="dropdown-link" href="#">Home9</a></li>
+                  <li><a class="dropdown-link" href="#">Home10</a></li>
+                  <li><a class="dropdown-link" href="#">Onepage1</a></li>
+                  <li><a class="dropdown-link" href="#">Onepage2</a></li>
+                </ul>
+            </li>
+            <li class="link">
+                <a href="#"><span>Docs</span></a>
+                <ul class="drop-down-menu">
+                  <li><a class="dropdown-link" href="#">Home1</a></li>
+                  <li><a class="dropdown-link" href="#">Home2</a></li>
+                  <li><a class="dropdown-link" href="#">Home3</a></li>
+                  <li><a class="dropdown-link" href="#">Home4</a></li>
+                  <li><a class="dropdown-link" href="#">Home5</a></li>
+                  <li><a class="dropdown-link" href="#">Home6</a></li>
+                  <li><a class="dropdown-link" href="#">Home7</a></li>
+                  <li><a class="dropdown-link" href="#">Home8</a></li>
+                  <li><a class="dropdown-link" href="#">Home9</a></li>
+                  <li><a class="dropdown-link" href="#">Home10</a></li>
+                  <li><a class="dropdown-link" href="#">Onepage1</a></li>
+                  <li><a class="dropdown-link" href="#">Onepage2</a></li>
+                </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+  </body>
+</html>

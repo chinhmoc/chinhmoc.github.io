@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buổi 2 bài 2.2</title>
+    <style>
+        button{
+            color:white;
+            background-color:rgb(13, 218, 150);
+            border:none;
+            border-radius: 8% ;
+            font-size: 20px;
+            padding:15px;
+
+
+        }
+        
+        body{
+            mergin:0;
+            
+        }
+
+        .button-container{
+            display:flex;
+            align-items: center;
+            justify-content: space-between;
+            padding:10px;
+            gap:10px;
+            
+            
+
+
+        }
+
+        .end-button{
+            float:inline-end;   
+        }
+        .start-button{
+            float:inline-start;
+        }
+        .center-button{
+            
+            background-color: rgb(238, 236, 236);
+            color:black;
+            border:2px solid black;
+            border-radius: 5px ;
+            font-size: 20px;
+            padding:15px;
+
+        }
+
+        .example-container{
+            background-color: rgb(236, 236, 236);
+            border-radius:5px;
+            border:none;
+            padding:5px;
+            display:flow-root;
+
+        }
+        .example-sup{
+            background-color:white;
+            
+            border:none;
+            padding: 10px;
+            border-left:3px solid green;
+            margin:0;
+        }
+        .note{
+            color:red;
+            background:lightgray;
+        }
+        .full-screen{
+            background-color: lightyellow;
+            margin:0;
+            gap:10px;
+            padding:35px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            
+
+        }
+        
+
+
+    </style>
+</head>
+<body>
+    <h1>CSS Syntax</h1>
+    <div class="button-container">
+        <button class="start-button">&lt;Previous</button>
+        <button class="end-button">Next&gt;</button>
+    </div>
+    <hr>
+    <p>A CSS rule consists of a selector and a declaration block.</p>
+    <hr>
+    <h2>CSS Syntax</h2>
+    <img src="https://www.w3schools.com/css/img_selector.gif" width:150px;>
+    <p>The selector points to the HTML element you want to style.</p>
+    <p>The declaration block contains one or more declarations separated by semicolons.</p>
+    <p>Each declaration includes a CSS property name and a value, separated by a colon.</p>
+    <p>Multiple CSS declarations are separated with semicolons, and declaration blocks are surrounded by curly braces.</p>
+    <div class="example-container">
+        <h3>Example</h3>
+        <p>In this example all &lt;p&gt; elements will be center-aligned, with a red text color:</p>
+        <div class="example-sup">
+            <p>p {<br>
+                color: red;<br>
+                text-align: center;<br>
+              }</p>
+        </div>
+        <br>
+        <button class="start-button"><p style="font-size:small">Try it Yourself &gt;&gt;</p></button>
+    </div>
+    <p>Example Explained</p>
+    <ul>
+        <li><span class="note">p</span> is a selector in CSS (it points to the HTML element you want to style: &lt;p&gt;).</li>
+        <li><span class="note">color</span> is a property, and <span class="note">red</span> is the property value</li>
+        <li><span class="note">text-align</span> is a property, and <span class="note">center</span> is the property value</li>
+
+    </ul>
+    <p class="full-screen">You will learn much more about CSS selectors and CSS properties in the next chapters!</p>
+    <div class="button-container">
+        <button class="start-button">&lt;Previous</button>
+        <button class="center-button">Log in to track progress</button>
+        <button class="end-button">Next&gt;</button>
+        
+    </div>
+    
+    
+</body>
+</html>

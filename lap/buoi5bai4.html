@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form dang ky</title>
+    <script src="b5bai4.js"></script>
+</head>
+<body style="margin-left: 25%;">
+    <form style="display: flex;flex-direction: column;align-items: flex-start;" action="/process_registration" method="post">
+        <h1 style="font-size: 30px;color: rgb(195, 43, 226);">Form đăng ký</h1>
+
+        <div class="1" style="display: flex;margin-bottom: 20px;">
+            <label style="margin-right: 10px;"   for="ho">Họ:</label>
+            <input placeholder="Điền họ của bạn" type="text" id="ho" name="ho" required>
+        </div>
+
+        <div class="1" style="display: flex;margin-bottom: 20px;">
+            <label style="margin-right: 10px;" for="ten">Tên:</label>
+            <input placeholder="Điền tên của bạn" type="text" id="ten" name="ten" required>
+        </div>
+        
+        <div class="1" style="display: flex;margin-bottom: 20px;">
+            <tr>
+                <td class="tieude">Ngày sinh:</td>
+                <td>
+                  Ngày
+                  <select style="margin: 0 5px 0 5px;" name="slNgaySinh" id="slNgaySinh">
+                    <script>
+                      for (var i = 1; i <= 31; i++) {
+                        document.write('<option value="' + i + '"> ' + i + '</option>');
+                      }
+                    </script>
+                  </select>
+      
+                  Tháng
+                  <select style="margin: 0 5px 0 5px;" name="slThangSinh" id="slThangSinh">
+                    <script>
+                      for (var i = 1; i <= 12; i++) {
+                        document.write('<option value="' + i + '"> ' + i + '</option>');
+                      }
+                    </script>
+                  </select>
+      
+                  Năm
+                  <select style="margin: 0 5px 0 5px;" name="slNamSinh" id="slNamSinh">
+                    <script>
+                      var objNgayGioHienTai = new Date();
+                      var namHienTai = objNgayGioHienTai.getFullYear();
+                      for (var i = namHienTai; i >= 1900; i--) {
+                        document.write('<option value="' + i + '"> ' + i + '</option>');
+                      }
+                    </script>
+                  </select>
+                </td>
+              </tr>
+        </div>
+        
+        <div class="1" style="display: flex;margin-bottom: 20px;">
+            <label>Giới tính:</label>
+            <input type="radio" id="nam" name="gioiTinh" value="nam" required>
+            <label for="nam">Nam</label>
+            <input type="radio" id="nu" name="gioiTinh" value="nu" required>
+            <label for="nu">Nữ</label>
+        </div>
+        
+        <div class="1" style="display: flex;margin-bottom: 20px;">
+            <label style="margin-right: 10px;" for="soDienThoai">Số điện thoại:</label>
+            <input placeholder="Điền số điện thoại của bạn" type="tel" id="soDienThoai" name="soDienThoai" pattern="[0-9]{10}" required>
+        </div>
+        
+        <div class="1" style="display: flex;margin-bottom: 20px;">
+            <label>Sở thích:</label>
+            <input type="checkbox" id="docSach" name="soThich" value="docSach">
+            <label for="docSach">Đọc sách</label>
+            <input type="checkbox" id="xemPhim" name="soThich" value="xemPhim">
+            <label for="xemPhim">Xem phim</label>
+            <input type="checkbox" id="ngheNhac" name="soThich" value="ngheNhac">
+            <label for="ngheNhac">Nghe nhạc</label>
+            <input type="checkbox" id="daBong" name="soThich" value="daBong">
+            <label for="daBong">Đá bóng</label>
+        </div>
+        
+        <div class="1" style="display: flex;margin-bottom: 20px;">
+            <label style="margin-right: 10px;" for="ho">Khác:</label>
+            <input style="height: 40px;" type="text" id="ho" name="khac" required>
+        </div>
+
+        <div class="2" style="display: flex;">
+            <input style="margin-right: 20px;" type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </div>
+        
+    </form>
+</body>
+</html>

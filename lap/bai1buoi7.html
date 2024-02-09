@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .font_chu{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode'
+    }
+    .mau_chu{
+    color: green;
+    }
+    .co_chu{
+    font-size: 13px;
+    }
+</style>
+<body>
+    
+    <h1 class="font_chu" id="td1">Đây là web của tôi.</h1> 
+    <button onclick="tonho()">try it</button>
+    <script>
+    var pt=document.getElementById("td1"); 
+    pt.classList.add("mau_chu", "co_chu"); 
+    function tonho(){
+    pt.classList.toggle("co_chu");
+    }
+    </script>
+    
+        
+</body>
+</html>

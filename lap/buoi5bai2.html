@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="dien-so">Dien so</label>
+    <input type="text" id="dien-so" />
+    <button class="ok">ok</button>
+    <script>
+        document.querySelector(".ok").addEventListener("click",function(){
+        let so = document.getElementById("dien-so").value
+        console.log('so')
+        if(so%2===0){
+            alert('số chẵn')
+        }
+        else{
+            alert('số lẻ')
+        }
+    })
+    </script>
+</body>
+</html>
